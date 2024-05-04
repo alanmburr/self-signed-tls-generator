@@ -1,0 +1,28 @@
+{
+    "name": "alanmburr/self-signed-tls-generator",
+    "description": "Quick & dirty library to generate your own TLS certificates from your CA.",
+    "license": "MPL",
+    "type": "library",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Alanmburr\\SelfSignedTlsGenerator\\": "src/"
+        },
+        "classmap": [
+            "src/"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Alan M. Burr",
+            "email": "info@alanburr.us.eu.org"
+        }
+    ],
+    "require": {
+        "margusk/openssl-wrapper": "dev-master",
+        "ramsey/uuid": "5.x-dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11"
+    }
+}
