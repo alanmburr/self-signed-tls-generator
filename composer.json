@@ -1,7 +1,7 @@
 {
     "name": "alanmburr/self-signed-tls-generator",
     "description": "Quick & dirty library to generate your own TLS certificates from your CA.",
-    "license": "MPL",
+    "license": "MPL-2.0",
     "type": "library",
     "minimum-stability": "dev",
     "autoload": {
