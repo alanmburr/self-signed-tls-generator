@@ -16,8 +16,8 @@ class SelfSignedTlsGenerator
     private static function isNull(mixed $item): bool {return \is_null($item);}
 
     public static DistinguishedName $dn;
-    public string|null $openSslCnfString;
-    public string|null $temporaryOpenSslCnfFilename;
+    public string|null $openSslCnfString = null;
+    public string|null $temporaryOpenSslCnfFilename = null;
     public string $vendorOpenSslConfigFilename = __DIR__ . "/VendorConfig.cnf";
     public string $vendorOpenSslConfigEndUserReqSectionName = "v3_req";
     public bool $debug = false;
