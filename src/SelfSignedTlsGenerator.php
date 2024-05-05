@@ -123,7 +123,7 @@ class SelfSignedTlsGenerator
             $this->temporaryOpenSslCnfFilename = SelfSignedTlsGenerator_Uuid::uuid5(
                 SelfSignedTlsGenerator_Uuid::NAMESPACE_DNS,
                 self::$dn::$commonName
-            );
+            )->toString();
             if ($this->debug)
             {
                 echo "(CODE I02) Temporary CNF file for OpenSSL: " . $this->temporaryOpenSslCnfFilename;
